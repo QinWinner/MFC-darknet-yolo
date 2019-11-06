@@ -1,7 +1,7 @@
 # MFC-darknet-yolo
 我利用在windows10上编译的darknet，编写了一个简单的mfc demo利用我们生成的模型来实现目标检测功能。
 
-![效果图片](./show.jpg)
+![效果图片](https://github.com/QinWinner/MFC-darknet-yolo/blob/master/show.jpg)
 
 
 ## 参考的项目
@@ -16,15 +16,14 @@
 	
 ### 主要利用api
 	在yolo_cpp_dll.dll -api
-	```
-	struct bbox_t {
-    unsigned int x, y, w, h;    // (x,y) - top-left corner, (w, h) - width & height of bounded box
-    float prob;                    // confidence - probability that the object was found correctly
-    unsigned int obj_id;        // class of object - from range [0, classes-1]
-    unsigned int track_id;        // tracking id for video (0 - untracked, 1 - inf - tracked object)
-    unsigned int frames_counter;// counter of frames on which the object was detected
+```
+        struct bbox_t {
+    	unsigned int x, y, w, h;    // (x,y) - top-left corner, (w, h) - width & height of bounded box
+       float prob;                    // confidence - probability that the object was found correctly
+       unsigned int obj_id;        // class of object - from range [0, classes-1]
+       unsigned int track_id;        // tracking id for video (0 - untracked, 1 - inf - tracked object)
+       unsigned int frames_counter;// counter of frames on which the object was detected
 };
-
 class Detector {
 public:
         Detector(std::string cfg_filename, std::string weight_filename, int gpu_id = 0);
@@ -41,7 +40,8 @@ public:
 #endif
 };
 	
-	```
+```
+
 需要注意其中的`std::vector<bbox_t> detect(cv::Mat mat, float thresh = 0.2, bool use_mean = false);`
 需要在编译darknet时候选择开启opencv才可以使用。
 
