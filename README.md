@@ -1,14 +1,14 @@
 # MFC-darknet-yolo
 我利用在windows10上编译的darknet，编写了一个简单的mfc demo利用我们生成的模型来实现目标检测功能。
 
-![效果图片](https://github.com/QinWinner/MFC-darknet-yolo/blob/master/show.jpg)
+![效果图片](/show.jpg)
 
 
 ## 参考的项目
+
 	借助了git上面再windows端通过vs2013 vs2015配置darknet项目的过程。
-	[项目连接](https://github.com/AlexeyAB/darknet)
-	
-	具体的项目训练和配置文件的撰写，可以参考blog[训练过程](https://www.cnblogs.com/pprp/p/9525508.html)
+[项目连接](https://github.com/AlexeyAB/darknet)
+具体的项目训练和配置文件的撰写，可以参考blog[训练过程](https://www.cnblogs.com/pprp/p/9525508.html)
 	
 ## 项目说明
 	在data文件夹中放入我们的两个配置文件，同时放入我们训练好的模型，
