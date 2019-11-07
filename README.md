@@ -1,5 +1,5 @@
 # MFC-darknet-yolo
-我利用在windows10上编译的darknet，编写了一个简单的mfc demo利用我们生成的模型来实现目标检测功能。
+我利用在windows10上编译的darknet，编写了一个简单的mfc demo利用我们生成的模型来实现目标检测功能。安全帽检测项目
 
 ![效果图片](/show.png)
 
@@ -13,6 +13,11 @@
 ## 项目说明
 	在data文件夹中放入我们的两个配置文件，同时放入我们训练好的模型，
 	模型的名字默认为final.weights
+### 查看训练好的模型  
+这里训练好的模型是用来检测工人是否佩戴安全帽[模型连接](链接：https://pan.baidu.com/s/1-IY0s4T-jBRlKnMimT7Jcg)
+提取码：cslg
+使用数据为[数据连接](https://github.com/njvisionpower/Safety-Helmet-Wearing-Dataset)同时结合了自己的项目进行了多次的迁移学习
+	
 	
 ### 主要利用api
 	在yolo_cpp_dll.dll -api
